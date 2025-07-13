@@ -86,6 +86,7 @@ void interactiveMode() {
                 cin >> b;
                 cout << "Enter number of intervals (n): ";
                 cin >> n;
+                displayFunctionTypes();
                 cout << "Enter function type (1-9): ";
                 cin >> funcType;
                 double result = calculator.areaTrapeze(a, b, n, funcType);
