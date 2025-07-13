@@ -14,36 +14,22 @@ private:
     int functionType;
 
 public:
-    Area(int a, int b, int n, int funcType = 1);
-    Area();
-    double areaTrapeze(int a, int b, int n);
-    double areaTrapeze(int a, int b, int n, int funcType);
-    double areaTrapeze(int a, int b, int n, double* coefficients, int degree);
-    double fct(double x);
-    double evaluateFunction(double x, int functionType);
-    double polynomialFunction(double x, double* coefficients, int degree);
-    void setFunctionType(int funcType);
-    ~Area();
-
     Area(int a, int b, int n, int funcType = 1) {
         this->a = a;
         this->b = b;
         this->n = n;
         this->functionType = funcType;
     }
-
     Area() {
         a = 0;
         b = 1;
         n = 100;
         functionType = 1;
     }
-
     ~Area() {}
     void setFunctionType(int funcType) {
         this->functionType = funcType;
     }
-
     double areaTrapeze(int a, int b, int n) {
         double result = 0.0;
         if (n > 0 && b >= a) {
@@ -57,7 +43,6 @@ public:
         }
         return result;
     }
-
     double areaTrapeze(int a, int b, int n, int funcType) {
         double result = 0.0;
         if (n > 0 && b >= a) {
@@ -100,7 +85,7 @@ public:
             case 6: return x * x * x;
             case 7: return cos(x);
             case 8: return log(x);
-            case 9: return exp(x*x);
+            case 9: return exp(x * x);
             default: return x * x;
         }
     }
