@@ -2,6 +2,13 @@
 #include <iostream>
 #include <iomanip>
 using namespace std;
+void displayFunctionTypes();
+void testDifferentFunctions();
+void testPolynomialIntegration();
+void demonstrateConstructors();
+void compareIntervals();
+void interactiveMode();
+
 
 void displayFunctionTypes() {
     cout << "\nAvailable Function Types:" << endl;
